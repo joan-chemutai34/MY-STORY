@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My Life Story | Skills</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="nav">
+    <div class="nav-inner">
+      <div class="brand">
+        <div class="badge" aria-hidden="true"></div>
+        <div>
+          <div>My Life Story</div>
+          <div class="muted" style="font-size:12px;">Skills & Talents</div>
+        </div>
+      </div>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <a href="childhood.html">Childhood</a>
+        <a href="education.html">Education</a>
+        <a href="skills.html">Skills</a>
+        <a href="future.html">Future</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="card pad reveal">
+      <h1 class="h-title">Skills & Talents</h1>
+      <p class="sub">I have developed a combination of technical abilities, soft skills, and personal strengths that support my academic and professional growth in software engineering. My technical skills include basic programming knowledge, web development using HTML, CSS, and JavaScript, and familiarity with common productivity and development tools. In addition to technical abilities, I possess strong soft skills such as communication, teamwork, time management, and problem-solving, which enable me to work effectively in collaborative environments. My hobbies, including exploring new technologies, reading, and engaging in creative projects, further strengthen my curiosity and commitment to continuous learning, helping me grow both personally and professionally.</p>
+    </div>
+
+    <section class="grid-3">
+      <div class="card pad reveal">
+        <h2>Technical</h2>
+        <div class="list">
+          <div class="item">HTML / CSS / JavaScript</div>
+          <div class="item">Microsoft Office / Google Workspace</div>
+          <div class="item">Data / Analytics (Excel, SQL basics, etc.)</div>
+        </div>
+      </div>
+
+      <div class="card pad reveal">
+        <h2>Soft Skills</h2>
+        <div class="list">
+          <div class="item">Communication</div>
+          <div class="item">Teamwork</div>
+          <div class="item">Time management</div>
+        </div>
+      </div>
+
+      <div class="card pad reveal">
+        <h2>Hobbies</h2>
+        <div class="list">
+          <div class="item">e.g., Reading / Sports / Music</div>
+          <div class="item">e.g., Volunteering</div>
+          <div class="item">e.g., Creative design</div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div>© <span id="year"></span>Joan Chemutai</div>
+      <div class="muted"><a href="future.html">Next: Future Aspirations</a></div>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+  <script src="js/main.js"></script>
+</body>
+</html>

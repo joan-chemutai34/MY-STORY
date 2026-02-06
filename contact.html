@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My Life Story | Contact</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="nav">
+    <div class="nav-inner">
+      <div class="brand">
+        <div class="badge" aria-hidden="true"></div>
+        <div>
+          <div>My Life Story</div>
+          <div class="muted" style="font-size:12px;">Contact</div>
+        </div>
+      </div>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <a href="childhood.html">Childhood</a>
+        <a href="education.html">Education</a>
+        <a href="skills.html">Skills</a>
+        <a href="future.html">Future</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="card pad reveal">
+      <h1 class="h-title">Contact Information</h1>
+      <p class="sub">
+       You can reach me via email at <a href="mailto:chemutaijoan957@gmail.com">chemutaijoan957@gmail.com</a>, or connect with me on <a href="https://github.com/joan-chemutai34" target="_blank">GitHub</a>.
+      </p>
+    </div>
+
+    <section class="section">
+      <div class="card pad reveal">
+        <h2>My details</h2>
+        <div class="list">
+          <div class="item"><strong>Email:</strong> <span class="muted">chemutaijoan957@gmail.com</span></div>
+          <div class="item"><strong>GitHub:</strong> <span class="muted">github.com/joan-chemutai34</span></div>
+        </div>
+      </div>
+
+      <div class="card pad reveal">
+        <h2>Send a message</h2>
+
+        <form id="contactForm" novalidate>
+          <div style="display:grid; gap:12px;">
+            <div>
+              <label for="name">Name</label>
+              <input class="input" id="name" name="name" placeholder="Your name" />
+            </div>
+
+            <div>
+              <label for="email">Email</label>
+              <input class="input" id="email" name="email" placeholder="your@email.com" />
+            </div>
+
+            <div>
+              <label for="subject">Subject</label>
+              <input class="input" id="subject" name="subject" placeholder="Reason for contacting" />
+            </div>
+
+            <div>
+              <label for="message">Message</label>
+              <textarea id="message" name="message" placeholder="Write your message..."></textarea>
+            </div>
+
+            <button class="btn primary" type="submit">Validate & Submit</button>
+          </div>
+
+          <div id="successBox" class="notice" role="status"></div>
+          <div id="errorBox" class="error" role="alert"></div>
+        </form>
+
+        <p class="muted" style="margin-top:12px;">
+          Note: This form demonstrates <strong>JavaScript validation</strong>. To actually send emails, connect it to a form service
+          like Formspree or Netlify Forms later.
+        </p>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div>© <span id="year"></span>Joan Chemutai</div>
+      <div class="muted"><a href="index.html">Back to Home</a></div>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My Life Story | Home</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="nav">
+    <div class="nav-inner">
+      <div class="brand">
+        <div class="badge" aria-hidden="true"></div>
+        <div>
+          <div>Joan's Life Story</div>
+          <div class="muted" style="font-size:12px;">Digital Portfolio</div>
+        </div>
+      </div>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <a href="childhood.html">Childhood</a>
+        <a href="education.html">Education</a>
+        <a href="skills.html">Skills</a>
+        <a href="future.html">Future</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="card pad reveal">
+        <h1 class="h-title">Hi, I’m <span style="color:var(--accent2);">Joan Chemutai</span>.</h1>
+        <p class="sub">
+          Welcome to my personal website,an evolving portfolio that tells my story from childhood to my current academic journey.
+          I built this site with <strong>HTML</strong>, <strong>CSS</strong>, and <strong>JavaScript</strong> to share who I am, what I’ve learnt, and where I’m going.
+        </p>
+
+        <div class="pills" aria-label="Quick facts">
+          <div class="pill">Major: Software Engineering</div>
+          <div class="pill">University: Kirinayaga University</div>
+          <div class="pill">Interests: e.g., Tech • innovation • Networking</div>
+          <div class="pill">Location: Nairobi, Kenya</div>
+        </div>
+
+        <div style="margin-top:14px; display:flex; gap:10px; flex-wrap:wrap;">
+          <a class="btn primary" href="education.html">Explore my education</a>
+          <a class="btn" href="contact.html">Contact me</a>
+        </div>
+      </div>
+
+      <aside class="card pad reveal">
+        <h2>What you’ll find here</h2>
+        <div class="list">
+          <div class="item">
+            <h3>My background</h3>
+            <div class="muted">Key moments that shaped my values and personality.</div>
+          </div>
+          <div class="item">
+            <h3>My academics</h3>
+            <div class="muted">Courses, achievements, projects, and growth.</div>
+          </div>
+          <div class="item">
+            <h3>My goals</h3>
+            <div class="muted">Career aspirations and the impact I want to make.</div>
+          </div>
+        </div>
+      </aside>
+    </section>
+
+    <section class="section">
+      <div class="card pad reveal">
+      <div class="card pad reveal">
+  <h2>Personal mission</h2>
+  <p class="muted">
+    My mission is to grow into a highly skilled software engineer who designs efficient, reliable, and user-centered technological solutions. I aim to continuously expand my programming knowledge and technical expertise so that I can build systems that solve real-world problems and improve everyday life. Through innovation, teamwork, and lifelong learning, I strive to contribute to projects that create meaningful impact in both industry and society. Ultimately, my goal is to use technology not only to advance my career but also to support my community by developing solutions that make services more accessible and efficient.
+  </p>
+</div>
+
+<div class="card pad reveal">
+  <h2>Highlights</h2>
+  <div class="kpi">
+    <div class="item">
+      <strong>3+</strong>
+      <span class="muted">Key strengths (e.g., teamwork, leadership)</span>
+    </div>
+    <div class="item">
+      <strong>2+</strong>
+      <span class="muted">Projects completed</span>
+    </div>
+  </div>
+</div>
+
+    </section>
+
+    <footer class="footer">
+      <div>© <span id="year"></span> Joan Chemutai</div>
+      <div class="muted">Built with HTML • CSS • JavaScript</div>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+  <script src="js/main.js"></script>
+</body>
+</html>
